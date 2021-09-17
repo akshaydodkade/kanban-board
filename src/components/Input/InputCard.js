@@ -30,7 +30,8 @@ const InputCard = ({setOpen}) => {
       <div>
         <Paper className={classes.card}>
           <InputBase 
-            multiline
+            multiline 
+            onBlur={() => setOpen(false)}
             fullWidth 
             inputProps={{ 
               className: classes.input,

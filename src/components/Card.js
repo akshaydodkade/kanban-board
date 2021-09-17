@@ -9,11 +9,11 @@ const useStyle = makeStyles((theme) => ({
   }
 }));
 
-const Card = () => {
+const Card = ({card}) => {
   const classes = useStyle();
   return (
     <div>
-      <Paper className={classes.card}>Introduction to React World - Hello React World</Paper>
+      <Paper className={classes.card}>{card.content}</Paper>
     </div>
   );
 }
