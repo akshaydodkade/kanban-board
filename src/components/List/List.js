@@ -28,7 +28,7 @@ export default function List({list}) {
             <Card card={card} key={card.id} />
           ))
         }
-        <InputContainer />
+        <InputContainer listId={list.id} />
       </Paper>
     </div>
   )

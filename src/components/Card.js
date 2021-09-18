@@ -13,7 +13,7 @@ const Card = ({card}) => {
   const classes = useStyle();
   return (
     <div>
-      <Paper className={classes.card}>{card.content}</Paper>
+      <Paper className={classes.card}>{card.title}</Paper>
     </div>
   );
 }
