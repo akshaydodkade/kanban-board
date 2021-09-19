@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { InputBase, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import DragHandleOutlinedIcon from "@material-ui/icons/DragHandleOutlined";
 import StoreAPI from '../../utils/StoreAPI';
 
 const useStyle = makeStyles((theme) => ({
   editableTitleContainer: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(1, 1, 1, 3),
     display: "flex"
   },
   editableTitle: {
@@ -17,7 +17,7 @@ const useStyle = makeStyles((theme) => ({
   input: {
     fontSize: "1.2rem",
     fontWeight: "bold",
-    margin: theme.spacing(1),
+    margin: theme.spacing(1, 1, 1, 3),
     '&:focus': {
       background: "#ddd"
     }
@@ -53,7 +53,7 @@ const Title = ({title, listId}) => {
         ):(
           <div className={classes.editableTitleContainer}>
             <Typography onClick={() => setOpen(!open)} className={classes.editableTitle}>{title}</Typography>
-            <MoreHorizIcon />
+            <DragHandleOutlinedIcon />
           </div>
           )
       }

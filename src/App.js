@@ -6,6 +6,7 @@ import { v4 as uuid } from 'uuid';
 import InputContainer from './components/Input/InputContainer';
 import { makeStyles } from "@material-ui/core/styles";
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+import Topbar from './components/Topbar';
 
 const useStyle = makeStyles((theme) => ({
   root: {
@@ -116,6 +117,7 @@ const App = () => {
 
   return (
     <StoreAPI.Provider value={{ addMoreCard, addMoreList, updateListTitle }}>
+      <Topbar />
       <DragDropContext onDragEnd={onDragEnd}>
         <Droppable droppableId="app" type="list" direction="horizontal">
           {

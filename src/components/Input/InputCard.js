@@ -13,13 +13,6 @@ const useStyle = makeStyles((theme) => ({
   input: {
     margin: theme.spacing(1),
   },
-  btnConfirm: {
-    background: '#5AAC44',
-    color: '#fff',
-    '&:hover': {
-      background: fade('#5AAC44', 0.75),
-    }
-  },
   confirm: {
     margin: theme.spacing(0, 1, 1, 1),
   }
@@ -63,7 +56,7 @@ const InputCard = ({setOpen, listId, type}) => {
         </Paper>
       </div>
       <div className={classes.confirm}>
-        <Button className={classes.btnConfirm} onClick={handleBtnConfirm}>
+        <Button className={classes.btnConfirm} onClick={handleBtnConfirm}  variant="contained" color="primary">
           {
             type === 'list'?"Add New List":"Add Card"
           }
