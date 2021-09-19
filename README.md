@@ -1,5 +1,8 @@
 # Kanban Board - Task Management App
 
+#### Check out demo at
+[kanban-task.netlify.app](kanban-task.netlify.app)
+
 #### Core Features
 * Add Multiple Lists
 * Add Multiple Task (Cards) in List
