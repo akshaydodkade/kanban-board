@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
 import { Button, IconButton, InputBase, Paper } from '@material-ui/core';
-import { fade, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import ClearIcon from "@material-ui/icons/Clear";
 import StoreAPI from '../../utils/StoreAPI';
 
